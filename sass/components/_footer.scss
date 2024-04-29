@@ -1,0 +1,95 @@
+$main-color:rgba(171, 131, 208, 0.363);
+
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+/* ---Footer--- */
+.footer {
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+
+    &__title{
+        text-align: center;
+    }
+
+    &__menu{
+        gap: 1rem;
+        align-items: center;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            li {
+                a {
+                color: black;
+                font-size: 1rem;
+                }
+            }
+        }
+        @include mq-tablet(){
+            ul {
+                flex-direction: row;
+            }
+        }
+    }
+
+    &__contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        @include mq-tablet(){
+            align-items: end;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.2rem;
+
+        .bi{
+            padding: 10px;
+            &:hover{
+                background-color: white;
+                border-radius: 20px;
+                padding: 10px;                
+                }
+            }
+    }
+    
+    &__button{
+        background-color:  rgba(171, 131, 208, 0);
+    }
+
+    
+    .copyright {
+        color: gray;
+        font-size: .75rem;
+    }
+
+    @include mq-tablet(){
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 8rem;
+    }
+
+}
+
+

@@ -1,0 +1,34 @@
+ /* Estilo para el contenedor de los círculos */
+.color-options-container {
+    display: flex; /* Utilizar Flexbox */
+}
+
+.color-option {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-option.color1 {
+    background-color:white; 
+    &:hover{
+        border: solid 2px black;
+    }
+}
+
+.color-option.color2 {
+    background-color: rgb(247, 174, 186); 
+    &:hover{
+        border: solid 2px black;
+    }
+}
+
+.color-option.color3 {
+    background-color: gray;
+    &:hover{
+        border: solid 2px black;
+    }
+}

@@ -1,0 +1,107 @@
+$color-card: rgba(171, 131, 208, 0.363);
+
+@mixin mq-tablet {
+    @media screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+/* --Productos index-- */
+.product {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem;
+
+    &__card-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__info {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__precio-color {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__carrusel {
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        align-items: center;
+        gap: 0.3rem;
+        overflow: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        .product__card {
+            flex-basis: 200px;
+            /*valor base */
+            flex-shrink: 0;
+            /*para que no se achique*/
+            margin-right: 10px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+            &:hover {
+                //transform: scale(1.2);
+                border-color: $color-card;
+                background-color: $color-card;
+            }
+
+        }
+    }
+
+    @include mq-tablet() {
+        &__card {
+            flex-basis: 250px;
+            /*valor base */
+            flex-shrink: 0;
+        }
+    }
+
+}
+
+/* Estilos para los botones de navegación */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.nav-button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+

@@ -1,0 +1,49 @@
+$color-menu: rgba(171, 131, 208, 0.153);
+$color-underline: rgb(167, 163, 163);
+$font-title-principal:'DM Serif Display', serif;
+
+
+@mixin mq-tablet() {
+    @media screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop() {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+.menu {
+    background-color: $color-menu;
+    padding: 3rem;
+    gap: 2rem;
+
+    &__carrito{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        @include mq-tablet(){
+            flex-direction: row;
+        }
+    }
+
+    &__barra {
+    font-size: 1.50rem;
+    font-family: $font-title-principal;
+    }
+
+    &__destacado {
+        text-decoration: underline;
+        color: $color-underline;
+    }
+
+    .title {
+        .cart {
+            text-align: start;
+        }
+    }
+}
+

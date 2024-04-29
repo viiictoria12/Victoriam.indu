@@ -1,0 +1,57 @@
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+
+/* ----HEADER INDEX---- */
+.navbar{
+    z-index: 2;
+    position: absolute;
+    padding: 0px;
+    background-color: transparent !important; 
+    border: none; 
+
+    .nav-link{
+        margin: 0.3rem;
+        color: black;
+    } 
+
+    .container-fluid{
+        background-color: rgba(171, 131, 208, 0);
+        gap: 1rem;
+        padding: 1rem;
+
+        .navbar-toggler{
+            background-color:transparent !important;
+            border: none;
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            border: none; 
+        }
+    }
+}
+
+
+
+/* --- header carrito --- */
+.navbar-carrito{
+    position: relative;
+    z-index: 2;
+    .container-fluid{
+        background-color: transparent !important;
+
+        @include mq-tablet{
+            background-color: transparent !important;
+            padding: 1.5rem;
+        }
+    }
+}

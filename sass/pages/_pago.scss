@@ -1,0 +1,59 @@
+@mixin mq-tablet {
+    @media screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+$width-input: 100%;
+
+
+.pago {
+    &__tarjeta {
+        &-opcion {
+            input {
+                border: solid 2px $main-color;
+            }
+            padding: 1rem;
+            margin: 1rem;
+            border: solid 5px white;
+            max-width: 120vh;
+            display: flex;
+            flex-direction: column;
+
+            .tarjeta-input {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .cod-venc{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 0.3rem;
+                }
+                input{
+                    padding: 0.5rem;
+                    width: $width-input;
+                }
+
+                &-destacado {
+                    width: $width-input;
+                    margin-top: 1rem;
+                    gap: 1rem;
+                    padding: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+.tarjeta-check {
+    font-size: 1.5rem;
+}

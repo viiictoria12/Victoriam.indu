@@ -1,0 +1,67 @@
+$tamaño-espacio:1rem;
+$size-icon:50px;
+$main-color:rgba(171, 131, 208, 0.363);
+
+
+@mixin mq-tablet {
+    @media screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+.beneficio{
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: $tamaño-espacio;
+    gap:$tamaño-espacio;
+    margin-top: $tamaño-espacio;
+
+    @include mq-tablet(){
+        flex-direction: row;
+    }
+
+    &__envio{
+        .bi-truck{
+            text-align: center;
+            font-size: $size-icon;
+        }
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__retiro{
+        .bi-shop{
+            text-align: center;
+            font-size: $size-icon;
+        }
+        display: flex;
+        flex-direction: column;
+    }
+    &__devolucion{
+        .bi-box{
+            text-align: center;
+            font-size: $size-icon;
+        }
+        display: flex;
+        flex-direction: column;
+    }
+    &-info{
+        &2{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.596);
+        }
+    }
+}
+.title-beneficios{
+    margin-top: $tamaño-espacio;
+    margin-bottom: 0;
+}

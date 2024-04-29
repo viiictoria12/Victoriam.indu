@@ -1,0 +1,111 @@
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+/* --- Carrito --- */
+.galeria-carrito{
+
+    @include mq-tablet(){
+        max-width: 900px; 
+    }
+    .img-container{
+        overflow: visible;
+    }
+    &__img{
+        img{
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            @include mq-tablet(){
+                width: 450px;
+            }
+        }
+    }
+
+    &__product{
+        border: 3px solid white;
+        padding: 1rem;
+
+        @include mq-tablet(){
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        text-align: center;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    &__nom-precio-cant{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        align-items: center;
+
+        @include mq-tablet(){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__precio-cant{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+    &__title{
+        margin-top: 1rem;
+
+    }
+
+    /* Resumen Compra */
+    &__input{
+        border: none;
+    }
+
+    @include mq-tablet(){
+        &__img{
+            display: flex;
+            flex-direction: column;
+        } 
+        
+        &__resumen-compra{
+            max-width: 900px;
+        }
+    }
+}
+.resumen-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem;
+    &__cup,
+    &__total,
+    &__env,
+    &__serv,
+    &__sub{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
+.title-cart{
+    text-align: start;
+    margin: 1.5rem;
+}
+

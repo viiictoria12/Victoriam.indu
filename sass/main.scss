@@ -1,0 +1,27 @@
+@import "./base";
+
+//header
+@import "./components/header";
+
+
+//components
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/galeria-flex";
+@import "./components/galeria-grid";
+@import "./components/menu-compra";
+@import "./components/_beneficios";
+@import "./components/circulo-colores";
+
+
+
+//pages
+@import "./pages/index";
+@import "./pages/carrito";
+@import "./pages/categorias";
+@import "./pages/pago";
+@import "./pages/detallecompra";
+
+
+//footer
+@import "./components/footer";

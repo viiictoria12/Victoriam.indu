@@ -1,0 +1,90 @@
+$width-input: 100%;
+$main-color: rgba(171, 131, 208, 0.363);
+
+
+@mixin mq-tablet {
+    @media screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+.detallecompra {
+    input {
+        border: solid 2px $main-color;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 2rem;
+    padding-top: 0px;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 5px white;
+    max-width: 120vh;
+
+    &__nom-ape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+
+        input {
+            width: $width-input;
+        }
+    }
+
+    // &__email,
+    // &__lugar{
+    //     input {
+    //         width: $width-input;
+    //     }
+    // }
+
+    &__dire {
+        display: flex;
+        flex-direction: column;
+        width: $width-input;
+        gap: 0.2rem;
+
+        input {
+            width: $width-input;
+        }
+    }
+
+    &__envio {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        .form-check {
+
+            &:hover {
+                background-color: white;
+            }
+        }
+    }
+
+    &__phone {
+        input {
+            width: $width-input;
+        }
+    }
+
+    @include mq-tablet() {
+        max-width: 900px;
+
+        &__dire {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+}

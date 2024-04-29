@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=EB+Garamond&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta class="description"
+        content="Facilitamos el pago seguro y sin complicaciones. Completa tu compra rápidamente con múltiples opciones de pago. ¡Haz que tu experiencia de compra sea rápida y segura!">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Opciones de pago</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg bg-body-tertiary navbar-carrito">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active button button-header" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link button button-header" href="./categorias.html">Categorias</a>
+                <a class="nav-link button button-header" href="#footer">Contacto</a>
+                <div class="nav-link button-carrito">
+                    <i class="bi-cart2"></i>
+                    <a href="./carrito.html">Carrito</a>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <nav class="menu__carrito">
+                <ul>
+                    <li class="menu__barra"><a href="./carrito.html">1. Mi carrito</a></li>
+                </ul>
+                <ul>
+                    <li class="menu__barra"><a href="./detallecompra.html">2. Detalle de Compra</a></li>
+                </ul>
+                <ul>
+                    <li class="menu__barra menu__destacado"><a href="./pago.html">3. Opciones de pago</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class=" title title-cart">Opciones de pago</h1>
+        <section class="pago">
+            <div class="pago__tarjeta">
+                <div class="pago__tarjeta-opcion">
+                    <div class="form-check tarjeta-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Tarjeta de credito
+                        </label>
+                    </div>
+                    <div class="tarjeta-input">
+                        <input class="tarjeta-input-destacado" type="number" name="num-tarjeta"
+                            placeholder="Numero de tarjeta">
+                        <div class="cod-venc">
+                            <input type="number" name="ven-tarjeta" placeholder="MM/VV">
+                            <input type="number" name="cod-tarjeta" placeholder="CVV">
+                        </div>
+                    </div>
+                    <input class="tarjeta-input-destacado" type="text" name="nom-tarjeta" placeholder="Titular tarjeta">
+                </div>
+
+                <div class="pago__tarjeta-opcion">
+                    <div class="form-check tarjeta-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Tarjeta de debito
+                        </label>
+                    </div>
+                    <div class="tarjeta-input">
+                        <input class="tarjeta-input-destacado" type="number" name="num-tarjeta"
+                            placeholder="Numero de tarjeta">
+                        <div class="cod-venc">
+                            <input type="number" name="ven-tarjeta" placeholder="MM/VV">
+                            <input type="number" name="cod-tarjeta" placeholder="CVV">
+                        </div>
+                    </div>
+                    <input class="tarjeta-input-destacado" type="text" name="nom-tarjeta" placeholder="Titular tarjeta">
+                </div>
+            </div>
+        </section>
+
+        <section class="btn-next">
+            <div class="btn-next__sig">
+                <a class="button button-comprar" href="">Comprar</a>
+            </div>
+        </section>
+
+        <section class="product container">
+
+            <h2 class="product__title">Productos</h2>
+            
+            <div class="product__carrusel">
+                
+                <article class="product__card">
+                    <img src="../img/topnegro2.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera deportiva para mujer UPTOWN</h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/modelo-topveige.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera deportiva para mujer UPTOWN</h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/conjuntonegro2.avif" alt="">
+                    <div class="product__info"> 
+                        <h5>Remera PUMA x THE RAGGED PRIEST</h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remeramulticolor.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera PUMA x THE RAGGED PRIEST </h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remeramujer.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera para mujer training Classics negro</h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topcortogris.avif" alt="">
+                    <div class="product__info">
+                        <h5>Top corto gris con negro DARE TO </h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remeracortatirantes.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera corta de tirantes RUN ULTRAFORM </h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remerablanca.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera gráfica blanca PUMA x LIBERTY </h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topcortonegro.avif" alt="">
+                    <div class="product__info">
+                        <h5>Top de training corto Studio Ultrabare</h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remerarosa.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera gráfica rosa PUMA x LIBERTY</h5>
+                        <div class="product__precio-color">
+                            <p>$100.000</p>
+                            <div class="color-options-container">
+                                <div class="color-option color1"></div>
+                                <div class="color-option color2"></div>
+                                <div class="color-option color3"></div>
+                            </div>
+                        </div>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+            </div> 
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div>
+            <h2 class="footer_title">Suite Fitness</h2>
+        </div>
+        <div class="footer__menu">
+            <nav class="footer__menu">
+                <ul>
+                    <li class="footer__button button"><a href="./index.html">Inicio</a></li>
+                    <li class="footer__button button"><a href="./pages/categorias.html">Categorias</a></li>
+                    <li class="footer__button button"><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__contacto">
+            <div class="footer__icons">
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-pinterest"></i>
+            </div>
+            <!-- <p class="copyright">© 2023 studios. All rights reserved.</p> -->
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

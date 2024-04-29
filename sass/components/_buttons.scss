@@ -1,0 +1,96 @@
+$color-buttongeneral:rgba(171, 131, 208, 0.546);
+$color-border-carrito:rgba(210, 180, 237, 0.769);
+$color-button-nav:white;
+$color-button-galeria1:#B3D1E5;
+$color-button-galeria2:#75727599;
+
+
+
+/* Botones de las tarjetas y generales del sitio */
+.button{
+    background-color: $color-buttongeneral ;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-button-nav;
+        padding: 10px 12px;
+    }
+
+    &-header{
+        background-color: $color-button-nav ;
+        &:hover{
+            background-color: $color-buttongeneral;
+            padding: 8px 10px;
+        }
+    }
+
+    &__carrusel{
+        &:hover{
+            padding: 8px 10px;
+        }
+    }
+
+
+    &-carrito{
+        background-color: $color-button-nav;
+        padding: 8px 10px;
+        border-color: $color-border-carrito ; 
+        border-radius: 5px;
+        font-size: 1rem;
+        text-align: center;
+    
+        &:hover{
+            background-color: $color-buttongeneral; 
+        }
+    }
+
+
+    /* botones de galeria-2 */
+    &-destacado{
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: $color-button-galeria2;
+        z-index: 2;
+        position: absolute;
+    
+        &:hover{
+            background-color:$color-border-carrito;
+            padding: 15px 25px;
+        }
+        
+    }
+
+    &-comprar{
+        padding: 15px 15px;
+    }
+}
+
+.galeria__button{
+    padding: 1rem;
+
+    &:hover{
+        background-color:$color-button-galeria1;
+        padding: 20px 25px;
+    }
+}
+
+.btn-next{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
+
+    &__sig{
+        margin-right: 1rem;
+    }
+    &__cancelar{
+        padding: 5px 5px;
+    }
+}
+
